@@ -14,8 +14,9 @@ Walls and Holes User Manual
 Introduction
 ============
 Walls and Holes is a 2D map editor which lets you develop 3D maps for
-your games. The primary feature for this application is the ease and 
-speed of which you can create a map, and at the end have a great mesh for use.
+your games. The primary feature for this applicatiPon is the ease and 
+speed of which you can create a map, and then at the end have a great mesh which 
+can be exported for your own use.
 
 Getting Started
 ================
@@ -62,10 +63,22 @@ Templates provided, the *Wall*, and *Ground/Eraser*.
 
 *Map is created*
 
-To save the map go to: File→Save Map ``Ctrl + S``
+Saving and Loading a Map
+------------------------
+To save the map go to: File→Save Map ``Ctrl + S`` and choose the directory which you
+want the map to be saved in. 
+
+.. image:: images/saveMap.png
+   :align: center
+
+*Saving a map*
 
 Once the map is saved you may load the map into the program at anytime
-you wish using File→Load Map ``Ctrl + O``
+you wish using File→Load Map ``Ctrl + O``, and choose the ``.wts`` file you want to
+load into the program.
+
+To export the map into a ``.obj`` file go to: File→Export Map Mesh ``Ctrl + E`` and
+choose the file directory which you want the object file to be saved in.
 
 .. _Tile Template:
 
@@ -194,6 +207,21 @@ Tile Map Tools
 			:width: 16
 			:height: 16
 
+Camera Tools
+------------
+.. image:: images/MeshView.png
+   :align: center
+
+*Mesh View Camera*
+
+The *Default* camera tool is the used to explore your generated 3D mesh. To move the
+camera around click inside the Mesh View and drag your mouse. To pan the camera 
+``Shift-Click`` the Mesh View and drag your mouse. Use the mousewheel to zoom in
+and out.
+
+The *Mesh View Matcher* cameral tool matches the Tile Map and the mesh in a top-down
+view.
+
 Materials
 =========
 Every Tile Template can be assigned a custom material and texture.
@@ -215,7 +243,7 @@ We are using the `Phong`_ reflection model for our shaders for the material
 
 .. _Phong: https://en.wikipedia.org/wiki/Phong_reflection_model
 
-*https://en.wikipedia.org/wiki/Phong_reflection_model*
+`Source <https://en.wikipedia.org/wiki/Phong_reflection_model>`_
 
 You can change the following properties of a material :
 	* **Ambient:** Specifies the minimum brightness of a material
@@ -257,6 +285,7 @@ Keyboard Shortcuts
 * ``Ctrl + O`` - Load an existing map
 * ``Ctrl + W`` - Close the map
 * ``Ctrl + E`` - Export the map mesh
+* ``Ctrl + Z`` - Undo last action
 * ``B`` - Activate the Brush tool
 * ``F`` - Activate the Fill tool
 * ``L`` - Activate the Line tool

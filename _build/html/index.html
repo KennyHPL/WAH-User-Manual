@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Walls and Holes User Manual &mdash; Walls and Holes User Manual 1.0.0 documentation</title>
+  <title>Walls and Holes User Manual &mdash; Walls And Holes User Manual 1.0 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Walls and Holes User Manual 1.0.0 documentation" href="#"/> 
+    <link rel="top" title="Walls And Holes User Manual 1.0 documentation" href="#"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -54,21 +54,14 @@
           
 
           
-            <a href="#" class="icon icon-home"> Walls and Holes User Manual
+            <a href="#" class="icon icon-home"> Walls And Holes User Manual
           
 
-          
-            
-            <img src="_static/WAH.png" class="logo" />
           
           </a>
 
           
             
-            
-              <div class="version">
-                1.0
-              </div>
             
           
 
@@ -98,6 +91,7 @@
 <li><a class="reference internal" href="#getting-started">Getting Started</a><ul>
 <li><a class="reference internal" href="#installing-the-program">Installing the program</a></li>
 <li><a class="reference internal" href="#creating-a-new-map">Creating a New Map</a></li>
+<li><a class="reference internal" href="#saving-and-loading-a-map">Saving and Loading a Map</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#the-tile-template-system">The Tile Template System</a><ul>
@@ -108,6 +102,7 @@
 </li>
 <li><a class="reference internal" href="#tools">Tools</a><ul>
 <li><a class="reference internal" href="#tile-map-tools">Tile Map Tools</a></li>
+<li><a class="reference internal" href="#camera-tools">Camera Tools</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#materials">Materials</a><ul>
@@ -132,7 +127,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Walls and Holes User Manual</a>
+          <a href="#">Walls And Holes User Manual</a>
         
       </nav>
 
@@ -188,8 +183,9 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Walls and Holes is a 2D map editor which lets you develop 3D maps for
-your games. The primary feature for this application is the ease and
-speed of which you can create a map, and at the end have a great mesh for use.</p>
+your games. The primary feature for this applicatiPon is the ease and
+speed of which you can create a map, and then at the end have a great mesh which
+can be exported for your own use.</p>
 </div>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
@@ -219,9 +215,18 @@ you can draw on the map. To draw on the map you must select a
 Templates provided, the <em>Wall</em>, and <em>Ground/Eraser</em>.</p>
 <img alt="_images/MapCreated.png" class="align-center" src="_images/MapCreated.png" />
 <p><em>Map is created</em></p>
-<p>To save the map go to: File→Save Map <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">S</span></code></p>
+</div>
+<div class="section" id="saving-and-loading-a-map">
+<h3>Saving and Loading a Map<a class="headerlink" href="#saving-and-loading-a-map" title="Permalink to this headline">¶</a></h3>
+<p>To save the map go to: File→Save Map <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">S</span></code> and choose the directory which you
+want the map to be saved in.</p>
+<img alt="_images/saveMap.png" class="align-center" src="_images/saveMap.png" />
+<p><em>Saving a map</em></p>
 <p>Once the map is saved you may load the map into the program at anytime
-you wish using File→Load Map <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">O</span></code></p>
+you wish using File→Load Map <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">O</span></code>, and choose the <code class="docutils literal notranslate"><span class="pre">.wts</span></code> file you want to
+load into the program.</p>
+<p>To export the map into a <code class="docutils literal notranslate"><span class="pre">.obj</span></code> file go to: File→Export Map Mesh <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">E</span></code> and
+choose the file directory which you want the object file to be saved in.</p>
 </div>
 </div>
 <div class="section" id="the-tile-template-system">
@@ -330,6 +335,17 @@ adjusted using the spin box when the tool is selected.</li>
 </li>
 </ul>
 </div>
+<div class="section" id="camera-tools">
+<h3>Camera Tools<a class="headerlink" href="#camera-tools" title="Permalink to this headline">¶</a></h3>
+<img alt="_images/MeshView.png" class="align-center" src="_images/MeshView.png" />
+<p><em>Mesh View Camera</em></p>
+<p>The <em>Default</em> camera tool is the used to explore your generated 3D mesh. To move the
+camera around click inside the Mesh View and drag your mouse. To pan the camera
+<code class="docutils literal notranslate"><span class="pre">Shift-Click</span></code> the Mesh View and drag your mouse. Use the mousewheel to zoom in
+and out.</p>
+<p>The <em>Mesh View Matcher</em> cameral tool matches the Tile Map and the mesh in a top-down
+view.</p>
+</div>
 </div>
 <div class="section" id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
@@ -342,7 +358,7 @@ window, after pressing the button this window will appear:</p>
 <p><em>Material View</em></p>
 <p>We are using the <a class="reference external" href="https://en.wikipedia.org/wiki/Phong_reflection_model">Phong</a> reflection model for our shaders for the material</p>
 <img alt="_images/phong.png" class="align-center" src="_images/phong.png" />
-<p><em>https://en.wikipedia.org/wiki/Phong_reflection_model</em></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Phong_reflection_model">Source</a></p>
 <dl class="docutils">
 <dt>You can change the following properties of a material :</dt>
 <dd><ul class="first last simple">
@@ -386,6 +402,7 @@ you wish to assign a material to, and click on the <code class="docutils literal
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">O</span></code> - Load an existing map</li>
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">W</span></code> - Close the map</li>
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">E</span></code> - Export the map mesh</li>
+<li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Z</span></code> - Undo last action</li>
 <li><code class="docutils literal notranslate"><span class="pre">B</span></code> - Activate the Brush tool</li>
 <li><code class="docutils literal notranslate"><span class="pre">F</span></code> - Activate the Fill tool</li>
 <li><code class="docutils literal notranslate"><span class="pre">L</span></code> - Activate the Line tool</li>
@@ -431,7 +448,7 @@ you wish to assign a material to, and click on the <code class="docutils literal
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0.0',
+            VERSION:'1.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -441,7 +458,6 @@ you wish to assign a material to, and click on the <code class="docutils literal
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

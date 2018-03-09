@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Walls and Holes User Manual'
+project = 'Walls And Holes User Manual'
 copyright = '2018, WAH'
 author = 'WAH'
 
 # The short X.Y version
-version = '1.0'
+version = ''
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '1.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,7 +39,6 @@ release = '1.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.mathjax',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -76,10 +75,6 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
-html_theme_options = {
-    "body_max_width": 1500
-}
-html_logo = 'images/WAH.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -106,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'WallsandHolesUserManualdoc'
+htmlhelp_basename = 'WallsAndHolesUserManualdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -133,7 +128,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'WallsandHolesUserManual.tex', 'Walls and Holes User Manual Documentation',
+    (master_doc, 'WallsAndHolesUserManual.tex', 'Walls And Holes User Manual Documentation',
      'WAH', 'manual'),
 ]
 
@@ -143,7 +138,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'wallsandholesusermanual', 'Walls and Holes User Manual Documentation',
+    (master_doc, 'wallsandholesusermanual', 'Walls And Holes User Manual Documentation',
      [author], 1)
 ]
 
@@ -154,10 +149,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'WallsandHolesUserManual', 'Walls and Holes User Manual Documentation',
-     author, 'WallsandHolesUserManual', 'One line description of project.',
+    (master_doc, 'WallsAndHolesUserManual', 'Walls And Holes User Manual Documentation',
+     author, 'WallsAndHolesUserManual', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-# -- Extension configuration -------------------------------------------------
